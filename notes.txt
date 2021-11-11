@@ -1,0 +1,6 @@
+Paleta colores:
+#79B4B7 07787e
+#FEFBF3
+#F8F0DF
+#9D9D9D
+#1c1d1d

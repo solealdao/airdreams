@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href= "../css/styles.css">
+</head>
+<body>
+
+    <header> 
+        
+        <div class= "menu-container">
+            <div class= "logo-container"><a href= "./index.html"><img class= "logo" src= '../img/logo.png' alt= 'Logo'></a></div>
+        
+            <div class= "top-menu">     
+            
+                <form class="searcher" action="products/search" method="POST">
+                    <input class="search-bar" name="search" type="text" placeholder="¿Qué estás buscando?">
+                    <div class="lupa">
+                        <button class="lupa button-search-bar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button> 
+                    </div>
+                </form>
+
+                <nav class= "nav-header">
+                    <ul class= "top-navbar">
+                        <li><a href= "/">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        <li><a href= "./login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a></li> 
+                    </ul>   
+                </nav>    
+                
+                <nav class= "categories-nav">
+                    <ul class= "bottom-navbar" >
+                        <li><a href= "#">Vuelos</a></li>
+                        <li><a href= "#">Paquetes</a></li>
+                        <li><a href= "#">Alojamiento</a></li>
+                        <li><a href= "#">Ofertas</a></li>
+                        <li><a href= "./contact.html">Contacto</a></li>
+                    </ul>  
+                </nav>
+            </div> 
+        </div>       
+       
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div> 
+
+    </header>
+    
+    <main class="main-register">
+        
+        <div class="contRegistro">
+            <h3 class="etiquetaRegister">REGISTRATE Y RECIBÍ LAS MEJORES OFERTAS</h3>
+
+            <form action="/register" method="POST" class="form-register" id="form-registro" enctype="multipart/form-data">
+
+                <div class="input-group">
+                    <span><i class="far fa-user-circle"></i></span>
+                    <input type="text" name="first_name" class="form-input" id="first_name"
+                        placeholder= "Nombre">                        
+                </div>
+
+                <div class="input-group">
+                    <span><i class="fas fa-user-circle"></i></span>
+                    <input type="text" name="last_name" class="form-input" id="last_name" placeholder= "Apellido">                        
+                </div>
+
+                <div class="input-group">
+                    <span><i class="fas fa-at"></i></span>
+                    <input type="email" name="email" class="form-input" id="email" placeholder="Dirección de correo electrónico">                        
+                </div>
+
+                <div class="input-group">
+                    <span><i class="fas fa-key"></i></span>
+                    <input type="password" name="password" class="form-input" id="password" placeholder="Contraseña">                        
+                </div>
+
+                <div class="div-btn-registro">
+                    <button type="submit" class="form-submit-button">Registrarse</button>
+                </div>
+            </form>            
+        </div>
+    </main>
+
+    <footer>  
+
+        <section>
+            <div class="about-us">
+                <p>La empresa</p>
+                <nav>
+                    <ul>
+                        <li><a href= "#">¿Quiénes somos?</a></li>
+                        <li><a href= "#">Preguntas frecuentes</a></li>                        
+                        <li><a href="#">Servicio al cliente</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section>
+            <div class="redes">
+                <p>Seguinos también en:</p>
+                <div class="social-media">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contact">
+                <p>Contacto</p>
+                <div class="whatsapp"><i class="fab fa-whatsapp"></i> 011-1500000000</div>
+                <div class="email"><i class="far fa-envelope"></i> ecommerce@gmail.com</div>
+            </div>
+        </section>
+
+    </footer>
+    
+</body>
+</html>

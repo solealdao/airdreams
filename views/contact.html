@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href= "../css/styles.css">
+</head>
+<body>
+
+    <header> 
+        
+        <div class= "menu-container">
+            <div class= "logo-container"><a href= "./index.html"><img class= "logo" src= '../img/logo.png' alt= 'Logo'></a></div>
+        
+            <div class= "top-menu">     
+            
+                <form class="searcher" action="products/search" method="POST">
+                    <input class="search-bar" name="search" type="text" placeholder="¿Qué estás buscando?">
+                    <div class="lupa">
+                        <button class="lupa button-search-bar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button> 
+                    </div>
+                </form>
+
+                <nav class= "nav-header">
+                    <ul class= "top-navbar">
+                        <li><a href= "/">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        <li><a href= "./login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a></li> 
+                    </ul>   
+                </nav>    
+                
+                <nav class= "categories-nav">
+                    <ul class= "bottom-navbar" >
+                        <li><a href= "#">Vuelos</a></li>
+                        <li><a href= "#">Paquetes</a></li>
+                        <li><a href= "#">Alojamiento</a></li>
+                        <li><a href= "#">Ofertas</a></li>
+                        <li><a href= "#">Contacto</a></li>
+                    </ul>  
+                </nav>
+            </div> 
+        </div>       
+       
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div> 
+
+    </header>
+
+
+    <main class= "main-contact">
+
+        <h3 class= "h3-home">Contactanos para cualquier consulta</h3>
+        <p>ecommerce@gmail.com</p>
+        <p>011-1500000000</p>
+
+        <h4>O dejanos tu mensaje</h2>
+
+        <form class="form-contact" action="/contact" method="POST">
+            <textarea class="msg-contact" placeholder="Tu mensaje..."></textarea>
+            <div class="button-contact"><button type= "submit" class="form-submit-button">Enviar</button></div>
+        </form>
+        
+        <div class= "iframe-contact">
+            <iframe class= "iframe" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d10893.271969305348!2d-58.46167095027363!3d-34.561263870022316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x95bcb5d483c1cd67%3A0x8a1edb81ef235af6!2sAv.%20Cabildo%2C%20Buenos%20Aires!3m2!1d-34.5616403!2d-58.457633799999996!5e0!3m2!1ses!2sar!4v1636594354720!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+
+    </main>
+
+
+    <footer>  
+
+        <section>
+            <div class="about-us">
+                <p>La empresa</p>
+                <nav>
+                    <ul>
+                        <li><a href= "#">¿Quiénes somos?</a></li>
+                        <li><a href= "#">Preguntas frecuentes</a></li>                        
+                        <li><a href="#">Servicio al cliente</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section>
+            <div class="redes">
+                <p>Seguinos también en:</p>
+                <div class="social-media">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contact">
+                <p>Contacto</p>
+                <div class="whatsapp"><i class="fab fa-whatsapp"></i> 011-1500000000</div>
+                <div class="email"><i class="far fa-envelope"></i> ecommerce@gmail.com</div>
+            </div>
+        </section>
+
+    </footer>
+    
+</body>
+</html>
